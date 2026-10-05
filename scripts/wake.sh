@@ -42,6 +42,8 @@ if git show-ref --verify --quiet "refs/remotes/origin/$CODE_BRANCH"; then
     || { git merge --abort 2>/dev/null; echo "!! could not merge latest code; continuing with current code"; }
 fi
 
+python3 -m trader init --bot "$BOT" >/dev/null || true
+
 echo "On branch: $(git rev-parse --abbrev-ref HEAD)"
 echo
 python3 -m trader status --bot "$BOT"

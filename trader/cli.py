@@ -23,6 +23,12 @@ def cmd_status(args) -> None:
     print(_desk(args).status_report())
 
 
+def cmd_init(args) -> None:
+    desk = _desk(args, write=True)
+    desk.ensure_initialized()
+    print(f"Books ready in bots/{args.bot}/")
+
+
 def cmd_market(args) -> None:
     ms = market_status()
     print(f"Market {'OPEN' if ms['open'] else 'CLOSED'}: {ms['reason']}")
@@ -140,6 +146,7 @@ def build_parser() -> argparse.ArgumentParser:
         return sp
 
     with_bot(sub.add_parser("status", help="your portfolio, limits and the market clock")).set_defaults(fn=cmd_status)
+    with_bot(sub.add_parser("init", help="create your books if they don't exist yet")).set_defaults(fn=cmd_init)
     sub.add_parser("market", help="is the market open?").set_defaults(fn=cmd_market)
 
     sp = sub.add_parser("quote", help="price + momentum stats for one or more symbols")
