@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Trading Showdown</title>
+  <meta name="description" content="Two AI traders, one month, $100k each. Rocket trades risky, Turtle trades safe. Live scoreboard, every trade, daily journals and full docs.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#/scoreboard">
+        <span class="brand-mark" aria-hidden="true">🚀<span class="vs">vs</span>🐢</span>
+        <span class="brand-text">
+          <strong id="comp-name">AI Trading Showdown</strong>
+          <span id="comp-sub" class="muted">Loading…</span>
+        </span>
+      </a>
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+    </div>
+    <nav class="wrap tabs" aria-label="Sections">
+      <a href="#/scoreboard" data-tab="scoreboard">Scoreboard</a>
+      <a href="#/trades" data-tab="trades">Trades</a>
+      <a href="#/journals" data-tab="journals">Journals</a>
+      <a href="#/brains" data-tab="brains">Brains</a>
+      <a href="#/docs" data-tab="docs">Docs</a>
+    </nav>
+  </header>
+
+  <main class="wrap" id="app">
+    <p class="loading">Loading the trading floor…</p>
+  </main>
+
+  <footer class="wrap footer muted">
+    <p>Paper money only: nobody's real dollars were harmed. Prices from Yahoo Finance.
+      <span id="data-source"></span></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>

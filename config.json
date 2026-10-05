@@ -1,0 +1,57 @@
+{
+  "competition": {
+    "name": "AI Paper Trading Showdown",
+    "start_date": "2026-10-05",
+    "end_date": "2026-11-05",
+    "starting_cash": 100000,
+    "timezone": "America/New_York",
+    "benchmark": "SPY",
+    "slippage_bps": 5,
+    "min_price": 1.0,
+    "wake_time_et": "10:17",
+    "wake_days": "Mon-Fri",
+    "close_snapshot_utc": "21:15"
+  },
+  "repo": "dippy34/ai-paper-trading",
+  "code_branch": "claude/intelligent-fermi-jjukha",
+  "bots": {
+    "risky": {
+      "name": "Rocket",
+      "emoji": "🚀",
+      "tagline": "Super risky. Leverage, shorts, moonshots.",
+      "branch": "bot-risky",
+      "persona": "personas/risky.md",
+      "color": {"light": "#eb6834", "dark": "#d95926"},
+      "rules": {
+        "allow_short": true,
+        "allow_leveraged_etfs": true,
+        "max_gross_leverage": 2.0,
+        "max_position_pct": null
+      }
+    },
+    "safe": {
+      "name": "Turtle",
+      "emoji": "🐢",
+      "tagline": "Slow and steady. Protect the capital.",
+      "branch": "bot-safe",
+      "persona": "personas/safe.md",
+      "color": {"light": "#1baf7a", "dark": "#199e70"},
+      "rules": {
+        "allow_short": false,
+        "allow_leveraged_etfs": false,
+        "max_gross_leverage": 1.0,
+        "max_position_pct": 0.25
+      }
+    }
+  },
+  "docs": [
+    {"title": "Overview", "path": "README.md"},
+    {"title": "Competition rules", "path": "docs/RULES.md"},
+    {"title": "Daily routine", "path": "docs/ROUTINE.md"},
+    {"title": "🚀 Rocket's persona", "path": "personas/risky.md"},
+    {"title": "🐢 Turtle's persona", "path": "personas/safe.md"},
+    {"title": "How it works", "path": "docs/ARCHITECTURE.md"},
+    {"title": "Data formats", "path": "docs/DATA.md"},
+    {"title": "Operations & setup", "path": "docs/OPERATIONS.md"}
+  ]
+}

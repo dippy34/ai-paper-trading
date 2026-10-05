@@ -1,0 +1,19 @@
+name: Tests
+
+on:
+  push:
+    branches-ignore: [bot-risky, bot-safe]
+  pull_request: {}
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  unit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - run: python3 -m unittest discover -s tests -v
+        env:
+          TRADER_SKIP_BRANCH_CHECK: "1"
