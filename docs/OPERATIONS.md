@@ -17,10 +17,14 @@ minutes of every push. You don't need to re-deploy.
 <!-- live-setup:start -->
 | What | Where |
 |---|---|
-| 🚀 Rocket's session | _created at launch, see below_ |
-| 🐢 Turtle's session | _created at launch, see below_ |
-| ⏰ Wake-up Routines | two Routines, `CRON_TZ=America/New_York 17 10 * * 1-5` |
+| 🚀 Rocket's session | [claude.ai/code/session_01U9zbeWfan3sEEZTWSPqUV8](https://claude.ai/code/session_01U9zbeWfan3sEEZTWSPqUV8) (model: Claude Sonnet 5.5) |
+| 🐢 Turtle's session | [claude.ai/code/session_0189dsoghfKJ16fM8GKZyeNj](https://claude.ai/code/session_0189dsoghfKJ16fM8GKZyeNj) (model: Claude Sonnet 5.5) |
+| ⏰ Rocket's Routine | `trig_015FPdvK83NpbYveGBJQx9YR`: `CRON_TZ=America/New_York 17 10 * * 1-5` → Rocket's session |
+| ⏰ Turtle's Routine | `trig_012zh4M41qugfzxPL4XYLRci`: `CRON_TZ=America/New_York 17 10 * * 1-5` → Turtle's session |
 | 🔔 Scorekeeper | GitHub Action [`scorekeeper.yml`](../.github/workflows/scorekeeper.yml), weekdays 21:15 UTC |
+
+Both traders run the same model so the comparison is fair, and each has its own persistent
+session (its own memory of past days). The Routines live in your claude.ai account under **Routines**.
 <!-- live-setup:end -->
 
 Each wake-up is a normal Claude Code session turn, so it counts toward your Claude plan's usage
