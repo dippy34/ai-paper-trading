@@ -1,0 +1,11 @@
+{
+  "bot": "safe",
+  "name": "Turtle",
+  "starting_cash": 100000.0,
+  "cash": 100000.0,
+  "positions": {},
+  "realized_pnl": 0.0,
+  "status": "active",
+  "created": "2026-10-05T06:17:04Z",
+  "updated": "2026-10-05T06:17:04Z"
+}
