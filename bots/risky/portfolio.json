@@ -2,10 +2,35 @@
   "bot": "risky",
   "name": "Rocket",
   "starting_cash": 100000.0,
-  "cash": 100000.0,
-  "positions": {},
+  "cash": -59999.968164780345,
+  "positions": {
+    "NVDA": {
+      "opened": "2026-10-05",
+      "qty": 211.2929,
+      "avg_price": 236.63825999999997,
+      "last_price": 236.53
+    },
+    "AMD": {
+      "opened": "2026-10-05",
+      "qty": 63.4561,
+      "avg_price": 630.357021,
+      "last_price": 630.23
+    },
+    "SOXL": {
+      "opened": "2026-10-05",
+      "qty": 185.6886,
+      "avg_price": 161.56073999999998,
+      "last_price": 161.44
+    },
+    "TQQQ": {
+      "opened": "2026-10-05",
+      "qty": 487.1749,
+      "avg_price": 82.1060325,
+      "last_price": 82.065
+    }
+  },
   "realized_pnl": 0.0,
   "status": "active",
   "created": "2026-10-05T06:16:49Z",
-  "updated": "2026-10-05T06:16:50Z"
+  "updated": "2026-10-05T14:19:30Z"
 }

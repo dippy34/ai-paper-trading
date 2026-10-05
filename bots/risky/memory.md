@@ -18,8 +18,12 @@ short/hedge idea ready if hot data breaks the tape. Cut anything -8% on thesis b
 - Crypto: MSTR 160, COIN 183 (-8% 5d), MARA 11 - only if BTC turns up
 - Short candidates: weak/broken names after hot data; none yet
 
-## Open positions
-(none)
+## Open positions (all opened Mon Oct 5 ~10:19 ET; gross 1.60x)
+- NVDA $50k @236.64: AI leader at 52w high, Micron confirms capex. Target 260; stop close <220. Catalyst: PCE Oct 7, jobs Oct 9.
+- AMD $40k @630.36: momentum at 52w high. Target 700; stop close <580.
+- SOXL $30k @161.56: 3x semis, vol 115%. Target 200; stop close <135 or below 50d (~127).
+- TQQQ $40k @82.11: Nasdaq trend. Target 90; stop close <74.
+Risk note: hot PCE/jobs/Fed hike fear is the main downside; if QQQ -3% in a day, cut TQQQ/SOXL first.
 
 ## Lessons
 (none yet)
