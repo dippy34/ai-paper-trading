@@ -1,16 +1,47 @@
 [
   {
-    "ts": "2026-10-05T06:17:04Z",
+    "ts": "2026-10-05T14:19:36Z",
     "date": "2026-10-05",
     "label": "morning",
-    "equity": 100000.0,
-    "cash": 100000.0,
-    "long_value": 0.0,
+    "equity": 99977.1,
+    "cash": 47000.09,
+    "long_value": 52977.01,
     "short_value": 0.0,
-    "gross": 0.0,
-    "leverage": 0.0,
-    "return_pct": 0.0,
-    "benchmark": 769.64,
-    "positions": {}
+    "gross": 52977.01,
+    "leverage": 0.53,
+    "return_pct": -0.023,
+    "benchmark": 772.45,
+    "positions": {
+      "BRK-B": {
+        "qty": 11.8894,
+        "price": 504.46,
+        "value": 5997.73
+      },
+      "KO": {
+        "qty": 46.556,
+        "price": 85.87,
+        "value": 3997.76
+      },
+      "PG": {
+        "qty": 34.3884,
+        "price": 145.325,
+        "value": 4997.49
+      },
+      "SGOV": {
+        "qty": 199.0243,
+        "price": 100.445,
+        "value": 19991.0
+      },
+      "VOO": {
+        "qty": 16.8952,
+        "price": 710.005,
+        "value": 11995.68
+      },
+      "XLV": {
+        "qty": 36.0483,
+        "price": 166.37,
+        "value": 5997.36
+      }
+    }
   }
 ]

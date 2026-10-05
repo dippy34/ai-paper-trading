@@ -14,7 +14,14 @@
 - Drawdown budget -5% from peak -> shift to SGOV. Review any position -7% from cost.
 
 ## Open positions
-(none yet)
+Opened Oct 5 (all at 10:2x AM). Thesis: defensive diversified core while Fed hikes. Exit: review at -7% from cost; cut risk if account -5% from peak.
+- VOO 16.9 @710.26 (12%) core; add tranches 2-3 after Oct 9 jobs. Target: hold to Nov 5.
+- SGOV 199 @100.49 (20%) ballast; sell to fund buys.
+- BRK-B 11.89 @504.65 (6%) quality; review <469.
+- XLV 36.05 @166.44 (6%) defensive healthcare; review <155.
+- PG 34.39 @145.40 (5%) staples; review <135. Next earnings ~late Oct (no adds before).
+- KO 46.56 @85.92 (4%) staples; review <80. Earnings ~late Oct.
+Cash ~47% (cash+SGOV ~67%). Equities ~33%.
 
 ## Watchlist
 - VOO/SPY: buy tranches; add on dips of 1%+.
