@@ -151,7 +151,7 @@ class Desk:
             )
 
     def ensure_initialized(self) -> None:
-        if not self.paths["portfolio"].exists():
+        if not self.paths["portfolio"].exists() or not self.paths["memory"].exists():
             self.save()
 
     def check_branch(self) -> None:
