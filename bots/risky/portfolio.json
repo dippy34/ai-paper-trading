@@ -1,0 +1,11 @@
+{
+  "bot": "risky",
+  "name": "Rocket",
+  "starting_cash": 100000.0,
+  "cash": 100000.0,
+  "positions": {},
+  "realized_pnl": 0.0,
+  "status": "active",
+  "created": "2026-10-05T06:16:49Z",
+  "updated": "2026-10-05T06:16:50Z"
+}

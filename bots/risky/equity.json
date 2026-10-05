@@ -1,0 +1,16 @@
+[
+  {
+    "ts": "2026-10-05T06:16:50Z",
+    "date": "2026-10-05",
+    "label": "morning",
+    "equity": 100000.0,
+    "cash": 100000.0,
+    "long_value": 0.0,
+    "short_value": 0.0,
+    "gross": 0.0,
+    "leverage": 0.0,
+    "return_pct": 0.0,
+    "benchmark": 769.64,
+    "positions": {}
+  }
+]
