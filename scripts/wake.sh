@@ -43,6 +43,8 @@ if git show-ref --verify --quiet "refs/remotes/origin/$CODE_BRANCH"; then
 fi
 
 python3 -m trader init --bot "$BOT" >/dev/null || true
+# Fill in closing scores for past days if the scorekeeper Action didn't record them.
+python3 -m trader backfill --bot "$BOT" || true
 
 echo "On branch: $(git rev-parse --abbrev-ref HEAD)"
 echo

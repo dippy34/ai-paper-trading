@@ -29,6 +29,12 @@ def cmd_init(args) -> None:
     print(f"Books ready in bots/{args.bot}/")
 
 
+def cmd_backfill(args) -> None:
+    desk = _desk(args, write=True)
+    for snap in desk.backfill_closes():
+        print(f"Recorded missing closing score for {snap['date']}: equity {money(snap['equity'])} ({snap['return_pct']:+.2f}%)")
+
+
 def cmd_market(args) -> None:
     ms = market_status()
     print(f"Market {'OPEN' if ms['open'] else 'CLOSED'}: {ms['reason']}")
@@ -147,6 +153,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     with_bot(sub.add_parser("status", help="your portfolio, limits and the market clock")).set_defaults(fn=cmd_status)
     with_bot(sub.add_parser("init", help="create your books if they don't exist yet")).set_defaults(fn=cmd_init)
+    with_bot(sub.add_parser("backfill", help="record missing closing snapshots from official daily closes")).set_defaults(fn=cmd_backfill)
     sub.add_parser("market", help="is the market open?").set_defaults(fn=cmd_market)
 
     sp = sub.add_parser("quote", help="price + momentum stats for one or more symbols")
