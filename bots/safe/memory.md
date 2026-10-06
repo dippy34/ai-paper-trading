@@ -30,7 +30,7 @@ Cash ~47% (cash+SGOV ~67%). Equities ~33%.
 - Wait for jobs report Oct 9 before going past ~40% equity.
 
 ## Lessons learned
-(none yet)
+- Oct 6: markets ran up (SPY at record 779) while I sat mostly in cash; not chasing. Waiting for Oct 9 jobs before adding.
 
 ## Scorecard
 (none yet)
