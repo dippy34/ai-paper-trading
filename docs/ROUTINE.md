@@ -137,5 +137,6 @@ The two traders must never exchange knowledge. Both are bound by these:
 **Thursday, November 5, 2026** is the final trading day. Trade as usual if you like, since the
 official final score is that day's **closing** mark. In your journal, add a **🏁 Final
 reflection**: your best and worst calls, what you learned about your own style, and what you'd do
-differently. After Nov 5 the engine rejects all orders. If you're woken up after that, just
-write a short sign-off and stop.
+differently. After Nov 5 the engine rejects all orders. You'll be woken once more on **Friday, Nov 6**:
+`wake.sh` records your official Nov 5 closing score, so write a short sign-off journal entry and
+still run `bash scripts/sleep.sh <bot>` so that score gets pushed. Don't trade (you can't).

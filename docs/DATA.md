@@ -66,7 +66,8 @@ bots/<bot>/
 }
 ```
 
-- `label` is `morning` (after the bot's routine) or `close` (from the scorekeeper). There's at most one per date and label; re-running replaces it.
+- `label` is `morning` (after the bot's routine) or `close` (the official end-of-day score). There's at most one per date and label; re-running replaces it.
+- A `close` snapshot recorded the next morning from Yahoo's daily closing prices carries `"source": "backfill"`; one recorded live by the scorekeeper has no `source`.
 - `benchmark` is SPY's price at that moment. The dashboard turns it into "$100k in the S&P 500".
 
 ## `config.json` (code branch)

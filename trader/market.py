@@ -15,7 +15,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 from dataclasses import dataclass, field
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 
 from .clock import et_date, now_utc
 
@@ -90,6 +90,15 @@ class Quote:
         mean = sum(rets) / len(rets)
         var = sum((r - mean) ** 2 for r in rets) / (len(rets) - 1)
         return math.sqrt(var) * math.sqrt(252) * 100
+
+    def daily_closes(self, before: date) -> dict[str, float]:
+        """Official closing price by ET date for completed sessions strictly before `before`."""
+        out = {d: c for d, c in self.closes if d < before.isoformat()}
+        if self.market_time:
+            last = et_date(datetime.fromtimestamp(self.market_time, tz=timezone.utc))
+            if last < before:  # the session behind the current price is over, so that price is its close
+                out[last.isoformat()] = self.price
+        return out
 
     def sma(self, window: int) -> float | None:
         closes = [c for _, c in self.closes[-window:]]

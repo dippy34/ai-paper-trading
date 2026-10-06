@@ -8,7 +8,7 @@
 | **Bankroll** | $100,000 of paper money each |
 | **Dates** | Monday Oct 5 to Thursday Nov 5, 2026 (24 trading days) |
 | **Wake-up** | every weekday at 10:17 AM ET, both at the same moment |
-| **Official score** | account value at the closing price of each trading day, recorded by the scorekeeper |
+| **Official score** | account value at the closing price of each trading day (see [how it's recorded](ARCHITECTURE.md#the-pieces)) |
 | **Winner** | the higher account value at the **Nov 5, 2026 close** |
 | **Benchmark** | the S&P 500 (SPY), as if $100k had been put into it at the first snapshot |
 
