@@ -17,11 +17,11 @@ ROOT = Path(__file__).resolve().parent.parent
 OPEN_TIME = datetime(2026, 10, 6, 14, 30, tzinfo=timezone.utc)  # Tue 10:30 ET
 
 
-def make_quote(symbol, price, itype="EQUITY", name=None, currency="USD"):
+def make_quote(symbol, price, itype="EQUITY", name=None, currency="USD", closes=None, market_time=None):
     return Quote(
         symbol=symbol, price=price, prev_close=price, currency=currency, instrument_type=itype,
-        name=name or f"{symbol} Inc.", exchange="NMS", market_time=int(OPEN_TIME.timestamp()),
-        regular_start=None, regular_end=None,
+        name=name or f"{symbol} Inc.", exchange="NMS", market_time=int((market_time or OPEN_TIME).timestamp()),
+        regular_start=None, regular_end=None, closes=list(closes or []),
     )
 
 
@@ -29,6 +29,8 @@ class FakeMarket:
     def __init__(self):
         self.prices = {"SPY": 700.0, "AAA": 100.0, "BBB": 50.0, "TQQQ": 80.0, "PENNY": 0.5}
         self.types = {"TQQQ": ("ETF", "ProShares UltraPro QQQ"), "SPY": ("ETF", "SPDR S&P 500 ETF Trust")}
+        self.history = {}  # symbol -> [(YYYY-MM-DD, close), ...] for completed sessions
+        self.market_time = None
         self.open = True
 
     def quote(self, symbol, history="6mo"):
@@ -36,7 +38,8 @@ class FakeMarket:
         if symbol not in self.prices:
             raise MarketDataError(f"{symbol}: not found")
         itype, name = self.types.get(symbol, ("EQUITY", None))
-        return make_quote(symbol, self.prices[symbol], itype, name)
+        return make_quote(symbol, self.prices[symbol], itype, name,
+                          closes=self.history.get(symbol), market_time=self.market_time)
 
     def status(self, now):
         return {"open": self.open, "reason": "test", "session_start": None, "session_end": None}
@@ -204,6 +207,47 @@ class DeskTest(unittest.TestCase):
                     d.check_branch()
         finally:
             os.environ["TRADER_SKIP_BRANCH_CHECK"] = "1"
+
+
+    # ---- closing-score backfill
+    def test_backfill_records_missing_closes_from_daily_bars(self):
+        self.desk("risky").order("buy", "AAA", qty=100, reason="position to value at the close")  # Tue Oct 6
+        # Friday morning: Tue/Wed/Thu are completed sessions, Thursday's close is the current price.
+        self.now = datetime(2026, 10, 9, 13, 0, tzinfo=timezone.utc)
+        self.mkt.market_time = datetime(2026, 10, 8, 20, 0, tzinfo=timezone.utc)
+        self.mkt.history = {
+            "SPY": [("2026-10-05", 699.0), ("2026-10-06", 701.0), ("2026-10-07", 702.0)],
+            "AAA": [("2026-10-05", 99.0), ("2026-10-06", 105.0), ("2026-10-07", 95.0)],
+        }
+        self.mkt.prices.update({"SPY": 703.0, "AAA": 110.0})  # Thursday's closes
+        d = self.desk("risky")
+        added = d.backfill_closes()
+        self.assertEqual([a["date"] for a in added], ["2026-10-06", "2026-10-07", "2026-10-08"])
+        cash = d.state["cash"]
+        self.assertAlmostEqual(added[0]["equity"], round(cash + 100 * 105.0, 2))
+        self.assertAlmostEqual(added[2]["equity"], round(cash + 100 * 110.0, 2))
+        self.assertEqual(added[0]["ts"], "2026-10-06T20:00:00Z")  # 4 PM EDT
+        self.assertEqual(added[1]["benchmark"], 702.0)
+        self.assertEqual(self.desk("risky").backfill_closes(), [])  # idempotent
+
+    def test_backfill_skips_days_before_last_trade_and_existing_closes(self):
+        d = self.desk("safe")
+        d.order("buy", "AAA", qty=10, reason="first buy on Tuesday")
+        d.snapshot("close")  # the scorekeeper did run on Tuesday
+        self.now = datetime(2026, 10, 8, 14, 30, tzinfo=timezone.utc)  # Thursday, market open
+        self.mkt.market_time = self.now
+        self.mkt.history = {"SPY": [("2026-10-06", 701.0), ("2026-10-07", 702.0)],
+                            "AAA": [("2026-10-06", 101.0), ("2026-10-07", 102.0)]}
+        added = self.desk("safe").backfill_closes()
+        self.assertEqual([a["date"] for a in added], ["2026-10-07"])  # Thursday is still trading
+
+    def test_backfill_needs_a_price_for_every_holding(self):
+        self.desk("risky").order("buy", "AAA", qty=1, reason="one share to value later")
+        self.now = datetime(2026, 10, 8, 13, 0, tzinfo=timezone.utc)
+        self.mkt.market_time = datetime(2026, 10, 7, 20, 0, tzinfo=timezone.utc)
+        self.mkt.history = {"SPY": [("2026-10-06", 701.0)], "AAA": []}  # AAA bar for Tuesday missing
+        added = self.desk("risky").backfill_closes()
+        self.assertEqual([a["date"] for a in added], ["2026-10-07"])
 
 
 class LeveragedDetectionTest(unittest.TestCase):

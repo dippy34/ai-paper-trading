@@ -37,6 +37,14 @@ def et_date(dt: datetime) -> date:
     return to_et(dt).date()
 
 
+def et_close_utc(d: date) -> datetime:
+    """4:00 PM New York time (the closing bell) on date d, in UTC."""
+    if ET is not None:
+        return datetime(d.year, d.month, d.day, 16, 0, tzinfo=ET).astimezone(timezone.utc)
+    approx = datetime(d.year, d.month, d.day, 20, 0, tzinfo=timezone.utc)
+    return datetime(d.year, d.month, d.day, 16, 0, tzinfo=timezone.utc) - _us_eastern_offset(approx)
+
+
 def iso_utc(dt: datetime) -> str:
     return dt.astimezone(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
 

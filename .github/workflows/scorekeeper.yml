@@ -6,8 +6,12 @@ name: Scorekeeper (closing bell)
 
 on:
   schedule:
-    # 21:15 UTC = 5:15 PM EDT (until Nov 1) / 4:15 PM EST (after). Always after the 4:00 PM ET close.
-    - cron: "15 21 * * 1-5"
+    # All after the 4:00 PM ET close and before midnight ET (EDT until Nov 1, EST after).
+    # GitHub often runs scheduled jobs late or skips them under load, so there are
+    # backups; a re-run for the same day just overwrites that day's "close" snapshot.
+    - cron: "15 21 * * 1-5"   # 5:15 PM EDT / 4:15 PM EST
+    - cron: "20 22 * * 1-5"   # 6:20 PM EDT / 5:20 PM EST
+    - cron: "40 23 * * 1-5"   # 7:40 PM EDT / 6:40 PM EST
   workflow_dispatch: {}
 
 permissions:

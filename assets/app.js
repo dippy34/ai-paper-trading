@@ -14,6 +14,22 @@
 
   const S = { config: null, bots: {}, journals: {}, docs: {}, chartMode: "equity", tradeFilter: "all", tradeSearch: "" };
   let lastFetchSig = "";
+  let routeSeq = 0;
+
+  // Markdown libraries load in the background so a slow CDN never blocks the scoreboard.
+  // Views that render markdown wait up to 5s for them, then fall back to plain text.
+  const loadScript = (src) => new Promise((resolve, reject) => {
+    const el = document.createElement("script");
+    el.src = src; el.async = true; el.onload = resolve; el.onerror = reject;
+    document.head.append(el);
+  });
+  const libsReady = Promise.race([
+    Promise.all([
+      loadScript("https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"),
+      loadScript("https://cdn.jsdelivr.net/npm/dompurify@3.1.6/dist/purify.min.js"),
+    ]).catch(() => null),
+    new Promise((resolve) => setTimeout(resolve, 5000)),
+  ]);
 
   // ------------------------------------------------------------------ dom helpers
   function h(tag, attrs, ...kids) {
@@ -257,7 +273,11 @@
     const n = tl.points.length;
     const x = (i) => m.l + (n === 1 ? iw / 2 : (i / (n - 1)) * iw);
     const y = (v) => m.t + ih - ((v - lo) / (hi - lo)) * ih;
-    const fmtY = mode === "equity" ? compactUsd : (v) => (v > 0 ? "+" : v < 0 ? MINUS : "") + Math.abs(v).toFixed(step < 1 ? 1 : 0) + "%";
+    // Tick labels need more precision when the accounts have barely moved.
+    const pctDigits = step >= 1 ? 0 : step >= 0.1 ? 1 : 2;
+    const fmtY = mode === "equity"
+      ? (v) => (step >= 1000 ? compactUsd(v) : money0(v))
+      : (v) => (v > 0 ? "+" : v < 0 ? MINUS : "") + Math.abs(v).toFixed(pctDigits) + "%";
 
     const svg = s("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Account value over time for each trader and the S&P 500", tabindex: "0" });
     for (let v = lo; v <= hi + step / 2; v += step) {
@@ -301,7 +321,7 @@
       const shown = ends.filter((e) => !ends.some((o) => o !== e && Math.abs(o.yy - e.yy) < 26 && (e.l.id === "bench" || o.l.id !== "bench")));
       for (const e of shown) {
         svg.append(s("text", { class: "endlabel", x: x(e.i) + 9, y: e.yy - 2 }, e.l.short));
-        svg.append(s("text", { class: "tick", x: x(e.i) + 9, y: e.yy + 11 }, mode === "equity" ? compactUsd(e.v) : fmtY(e.v)));
+        svg.append(s("text", { class: "tick", x: x(e.i) + 9, y: e.yy + 11 }, fmtY(e.v)));
       }
     }
     // hover layer: crosshair snaps to the nearest snapshot, one tooltip lists every series
@@ -534,6 +554,7 @@
   }
 
   async function viewJournals() {
+    const seq = routeSeq;
     const app = document.getElementById("app");
     const ids = Object.keys(S.bots);
     const dates = [...new Set(ids.flatMap((id) => S.bots[id].journalIndex))].sort().reverse();
@@ -542,7 +563,8 @@
     if (!dates.length) { app.append(h("p", { class: "card empty", style: "margin-top:16px" }, "No journal entries yet.")); return; }
     const holder = h("div", {}, h("p", { class: "loading" }, "Loading journals…"));
     app.append(holder);
-    await loadJournals(dates);
+    await Promise.all([loadJournals(dates), libsReady]);
+    if (seq !== routeSeq) return;
     holder.textContent = "";
     for (const d of dates) {
       holder.append(h("section", { class: "day-block" },
@@ -557,7 +579,10 @@
     }
   }
 
-  function viewBrains() {
+  async function viewBrains() {
+    const seq = routeSeq;
+    await libsReady;
+    if (seq !== routeSeq) return;
     const app = document.getElementById("app");
     const ids = Object.keys(S.bots);
     app.textContent = "";
@@ -573,6 +598,7 @@
   }
 
   async function viewDocs(path) {
+    const seq = routeSeq;
     const docs = S.config.docs;
     path = path || docs[0].path;
     const app = document.getElementById("app");
@@ -582,6 +608,8 @@
     app.textContent = "";
     app.append(h("div", { class: "docs-layout" }, nav, body));
     if (!(path in S.docs)) S.docs[path] = await fetchText(path);
+    await libsReady;
+    if (seq !== routeSeq) return;
     body.textContent = "";
     const text = S.docs[path];
     if (text == null) body.append(h("p", { class: "empty" }, `Couldn't load ${path}.`));
@@ -603,7 +631,7 @@
     if (window.marked && window.DOMPurify) {
       div.innerHTML = window.DOMPurify.sanitize(window.marked.parse(text, { gfm: true, breaks: false }));
     } else {
-      div.innerHTML = `<pre>${esc(text)}</pre>`;
+      div.innerHTML = `<pre class="plain">${esc(text)}</pre>`;
     }
     const docPaths = new Set(S.config.docs.map((d) => d.path));
     for (const a of div.querySelectorAll("a[href]")) {
@@ -619,6 +647,7 @@
 
   // ------------------------------------------------------------------ router
   function route() {
+    routeSeq++;
     const hash = location.hash.replace(/^#\/?/, "");
     const [tab, ...rest] = hash.split("/");
     const name = ["scoreboard", "trades", "journals", "brains", "docs"].includes(tab) ? tab : "scoreboard";
@@ -669,7 +698,7 @@
     }, 5 * 60 * 1000);
   }
 
-  // marked/DOMPurify load with `defer` before this script; boot after DOM is ready either way.
+  // Boot once the DOM is ready.
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", boot);
   else boot();
 })();

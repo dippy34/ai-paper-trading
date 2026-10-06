@@ -15,7 +15,7 @@ from datetime import date, datetime
 from pathlib import Path
 from typing import Callable
 
-from .clock import et_date, iso_utc, now_utc, to_et, weekdays_between
+from .clock import et_close_utc, et_date, iso_utc, now_utc, to_et, weekdays_between
 from .market import MarketDataError, Quote, get_quote, is_leveraged_product, market_status, traded_today
 
 EPS = 1e-9
@@ -457,6 +457,63 @@ class Desk:
         self.equity.sort(key=lambda e: e["ts"])
         self.save()
         return snap
+
+    def backfill_closes(self) -> list[dict]:
+        """Record any missing "close" snapshots for completed trading days since the last trade.
+
+        A bot's book only changes during its own routine, so its book at a past
+        closing bell is the current book priced at that day's official closes.
+        This keeps the daily score complete even if the scorekeeper Action never ran.
+        """
+        today = self.today()
+        start = date.fromisoformat(self.comp["start_date"]).isoformat()
+        end = date.fromisoformat(self.comp["end_date"]).isoformat()
+        floor = max(start, self.trades[-1]["date"]) if self.trades else start
+        have = {e["date"] for e in self.equity if e["label"] == "close"}
+        try:
+            spy = self.quote(self.comp["benchmark"]).daily_closes(before=today)
+            days = sorted(d for d in spy if floor <= d <= end and d not in have)
+            if not days:
+                return []
+            closes = {sym: self.quote(sym).daily_closes(before=today) for sym in self.state["positions"]}
+        except MarketDataError:
+            return []
+        added = []
+        for d in days:
+            if any(d not in c for c in closes.values()):
+                continue  # can't price every holding for that day; leave it to the live snapshot
+            positions, long_value, short_value = {}, 0.0, 0.0
+            for sym, pos in sorted(self.state["positions"].items()):
+                px = closes[sym][d]
+                val = pos["qty"] * px
+                positions[sym] = {"qty": pos["qty"], "price": round(px, 4), "value": round(val, 2)}
+                if val >= 0:
+                    long_value += val
+                else:
+                    short_value += -val
+            equity = self.state["cash"] + long_value - short_value
+            gross = long_value + short_value
+            snap = {
+                "ts": iso_utc(et_close_utc(date.fromisoformat(d))),
+                "date": d,
+                "label": "close",
+                "source": "backfill",
+                "equity": round(equity, 2),
+                "cash": round(self.state["cash"], 2),
+                "long_value": round(long_value, 2),
+                "short_value": round(short_value, 2),
+                "gross": round(gross, 2),
+                "leverage": round(gross / equity, 3) if equity > 0 else None,
+                "return_pct": round((equity / float(self.state["starting_cash"]) - 1) * 100, 3),
+                "benchmark": spy[d],
+                "positions": positions,
+            }
+            self.equity.append(snap)
+            added.append(snap)
+        if added:
+            self.equity.sort(key=lambda e: e["ts"])
+            self.save()
+        return added
 
     def _liquidate(self, val: dict, now: datetime) -> None:
         for sym, p in val["positions"].items():

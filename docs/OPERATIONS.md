@@ -21,7 +21,7 @@ minutes of every push. You don't need to re-deploy.
 | 🐢 Turtle's session | [claude.ai/code/session_0189dsoghfKJ16fM8GKZyeNj](https://claude.ai/code/session_0189dsoghfKJ16fM8GKZyeNj) (model: Claude Sonnet 5.5) |
 | ⏰ Rocket's Routine | `trig_015FPdvK83NpbYveGBJQx9YR`: `CRON_TZ=America/New_York 17 10 * * 1-5` → Rocket's session |
 | ⏰ Turtle's Routine | `trig_012zh4M41qugfzxPL4XYLRci`: `CRON_TZ=America/New_York 17 10 * * 1-5` → Turtle's session |
-| 🔔 Scorekeeper | GitHub Action [`scorekeeper.yml`](../.github/workflows/scorekeeper.yml), weekdays 21:15 UTC |
+| 🔔 Scorekeeper | GitHub Action [`scorekeeper.yml`](../.github/workflows/scorekeeper.yml), weekdays 21:15 UTC (backups 22:20 and 23:40 UTC) |
 
 Both traders run the same model so the comparison is fair, and each has its own persistent
 session (its own memory of past days). The Routines live in your claude.ai account under **Routines**.
@@ -54,6 +54,9 @@ like any other session.
 - **A bot didn't show up today.** Open its session and check the last turn. If it failed
   mid-routine, send "Run your daily routine now" while the market is open. The routine is safe
   to re-run: snapshots and journal entries for the same day update rather than duplicate.
+- **No closing score on the evening itself.** GitHub sometimes runs scheduled jobs late or not
+  at all. Nothing is lost: each bot's next wake-up backfills the missing close from Yahoo's
+  official daily closes. You can also run the scorekeeper by hand from the Actions tab.
 - **The scorekeeper can't push.** The workflow requests `contents: write`. If your account or
   organization blocks that, go to **Settings → Actions → General → Workflow permissions** and
   choose **Read and write permissions**.
@@ -65,10 +68,10 @@ like any other session.
 
 ## Ending the contest
 
-The last trading day is **Thu Nov 5, 2026**. The engine refuses all orders after that date, and
-the scorekeeper stops recording once the contest window has passed. After the final closing
-snapshot, disable (or delete) the two wake-up Routines. A follow-up check is scheduled to do
-this automatically.
+The last trading day is **Thu Nov 5, 2026**. The engine refuses all orders after that date. The
+bots wake once more on **Fri Nov 6** so `wake.sh` records the official Nov 5 closing score (if the
+scorekeeper hasn't already) and they write a sign-off. After that, disable (or delete) the two
+wake-up Routines. A follow-up check is scheduled to do this automatically on Nov 6.
 
 ## Developing locally
 
