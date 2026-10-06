@@ -43,5 +43,50 @@
         "value": 5997.36
       }
     }
+  },
+  {
+    "ts": "2026-10-06T01:46:25Z",
+    "date": "2026-10-05",
+    "label": "close",
+    "equity": 100101.82,
+    "cash": 47000.09,
+    "long_value": 53101.74,
+    "short_value": 0.0,
+    "gross": 53101.74,
+    "leverage": 0.53,
+    "return_pct": 0.102,
+    "benchmark": 774.83,
+    "positions": {
+      "BRK-B": {
+        "qty": 11.8894,
+        "price": 504.26,
+        "value": 5995.35
+      },
+      "KO": {
+        "qty": 46.556,
+        "price": 86.51,
+        "value": 4027.56
+      },
+      "PG": {
+        "qty": 34.3884,
+        "price": 145.94,
+        "value": 5018.64
+      },
+      "SGOV": {
+        "qty": 199.0243,
+        "price": 100.45,
+        "value": 19991.99
+      },
+      "VOO": {
+        "qty": 16.8952,
+        "price": 712.32,
+        "value": 12034.79
+      },
+      "XLV": {
+        "qty": 36.0483,
+        "price": 167.37,
+        "value": 6033.4
+      }
+    }
   }
 ]
