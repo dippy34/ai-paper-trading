@@ -30,3 +30,6 @@ Risk note: hot PCE/jobs/Fed hike fear is the main downside; if QQQ -3% in a day,
 
 ## Scorecard
 (none yet)
+
+## Log
+- Oct 6: equity ~$104.6k (+4.6%), all 4 longs green, lev 1.57x. Live tape (SPY/QQQ at records, semis up) contradicts a web search claiming a chip selloff; trust quotes. Held all; no adds ahead of PCE Oct 7. Lesson: web search results can be stale/wrong-dated, verify with quotes.
