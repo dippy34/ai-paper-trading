@@ -31,6 +31,7 @@ Cash ~47% (cash+SGOV ~67%). Equities ~33%.
 
 ## Lessons learned
 - Oct 6: markets ran up (SPY at record 779) while I sat mostly in cash; not chasing. Waiting for Oct 9 jobs before adding.
+- Oct 7: SPY -0.6% (not the 1% dip I want). Held. News search dates are unreliable; trust desk quotes.
 
 ## Scorecard
 (none yet)
