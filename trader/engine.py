@@ -422,6 +422,8 @@ class Desk:
                 return None
             if not self.traded_today_fn(now):
                 return None
+            if self.market_fn(now)["open"]:
+                return None  # a late-running scorekeeper must never call a mid-session price a "close"
         val = self.value()
         if val["equity"] <= 0 and self.state["status"] == "active":
             self._liquidate(val, now)

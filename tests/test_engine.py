@@ -182,6 +182,12 @@ class DeskTest(unittest.TestCase):
         self.assertEqual([e["label"] for e in d.equity], ["morning", "close"])
         self.assertEqual(d.equity[0]["benchmark"], 700.0)
 
+    def test_scorekeeper_close_only_after_the_bell(self):
+        d = self.desk("safe")
+        self.assertIsNone(d.snapshot("close", only_trading_day=True))  # market still open
+        self.mkt.open = False
+        self.assertEqual(d.snapshot("close", only_trading_day=True)["label"], "close")
+
     def test_journal_appends_and_indexes(self):
         d = self.desk("safe")
         d.write_journal("## Market read\nCalm.")
