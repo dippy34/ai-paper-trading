@@ -33,3 +33,4 @@ Risk note: hot PCE/jobs/Fed hike fear is the main downside; if QQQ -3% in a day,
 
 ## Log
 - Oct 6: equity ~$104.6k (+4.6%), all 4 longs green, lev 1.57x. Live tape (SPY/QQQ at records, semis up) contradicts a web search claiming a chip selloff; trust quotes. Held all; no adds ahead of PCE Oct 7. Lesson: web search results can be stale/wrong-dated, verify with quotes.
+- Oct 7: equity ~$99.7k (-0.3%); pullback day (QQQ -0.8%, SOXL -5.5%). Held all, no thesis break (SOXL 155 vs stop 135). Correction: Aug PCE actually came out ~Sep 30 and was COOL (3.4% hdl/3.0% core); Oct hike odds ~35%. Remaining catalyst this week: jobs Fri Oct 9 (strong data = hike fear = risk for TQQQ/SOXL). Lev 1.60x.

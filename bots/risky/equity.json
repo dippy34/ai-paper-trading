@@ -138,5 +138,40 @@
         "value": 41044.49
       }
     }
+  },
+  {
+    "ts": "2026-10-07T14:18:53Z",
+    "date": "2026-10-07",
+    "label": "morning",
+    "equity": 99596.93,
+    "cash": -59999.97,
+    "long_value": 159596.9,
+    "short_value": 0.0,
+    "gross": 159596.9,
+    "leverage": 1.602,
+    "return_pct": -0.403,
+    "benchmark": 774.725,
+    "positions": {
+      "AMD": {
+        "qty": 63.4561,
+        "price": 637.29,
+        "value": 40439.94
+      },
+      "NVDA": {
+        "qty": 211.2929,
+        "price": 238.23,
+        "value": 50336.31
+      },
+      "SOXL": {
+        "qty": 185.6886,
+        "price": 154.845,
+        "value": 28752.95
+      },
+      "TQQQ": {
+        "qty": 487.1749,
+        "price": 82.245,
+        "value": 40067.7
+      }
+    }
   }
 ]
