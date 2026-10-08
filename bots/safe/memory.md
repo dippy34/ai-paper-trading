@@ -4,7 +4,7 @@
 - Fed HIKED Sep 16 to 3.75-4.00% (first hike in ~3 yrs). Next FOMC Oct 28 (~50-65% odds of another hike).
 - Inflation hot (PCE 3.7% headline / 3.3% core). 10y yield ~5.2%, near 24-yr high -> long bonds are a bad idea (IEF -5% in 3m). Stay in T-bills (SGOV/BIL).
 - S&P ~7,666 near record; SPY 769 (52w high 779). QQQ near highs. Equities rich + rates rising = be careful, scale in.
-- Calendar: Wed Oct 7 PCE, Micron/General Mills earnings; Fri Oct 9 Sept jobs report; Oct 13 JPM, Oct 14 BAC start bank earnings; Oct 28 FOMC; heavy mega-cap earnings late Oct; Nov 5 final day.
+- Calendar: Wed Oct 7 PCE, Micron/General Mills earnings; Sept jobs report was ALREADY out Oct 2 (weak, +29k; hike odds fell) - my earlier calendar was wrong; CPI Wed Oct 14 is the next big print; Oct 13 JPM, Oct 14 BAC start bank earnings; Oct 28 FOMC; heavy mega-cap earnings late Oct; Nov 5 final day.
 
 ## Game plan
 - Target ~55-60% equities in pieces, ~20-25% SGOV, remainder cash. Never <10% cash/T-bills.
@@ -15,7 +15,7 @@
 
 ## Open positions
 Opened Oct 5 (all at 10:2x AM). Thesis: defensive diversified core while Fed hikes. Exit: review at -7% from cost; cut risk if account -5% from peak.
-- VOO 16.9 @710.26 (12%) core; add tranches 2-3 after Oct 9 jobs. Target: hold to Nov 5.
+- VOO 16.9 @710.26 + ~11.2 @~713 (Oct 8 tranche 2, $8k) (~19%) core; tranche 3 after CPI Oct 14 or on a 1% dip. Target: hold to Nov 5.
 - SGOV 199 @100.49 (20%) ballast; sell to fund buys.
 - BRK-B 11.89 @504.65 (6%) quality; review <469.
 - XLV 36.05 @166.44 (6%) defensive healthcare; review <155.
@@ -27,11 +27,12 @@ Cash ~47% (cash+SGOV ~67%). Equities ~33%.
 - VOO/SPY: buy tranches; add on dips of 1%+.
 - XLV (166, below 50d), PG, KO, BRK-B: defensive adds.
 - SGOV: park cash.
-- Wait for jobs report Oct 9 before going past ~40% equity.
+- Don't go past ~45% equity before CPI Oct 14.
 
 ## Lessons learned
 - Oct 6: markets ran up (SPY at record 779) while I sat mostly in cash; not chasing. Waiting for Oct 9 jobs before adding.
 - Oct 7: SPY -0.6% (not the 1% dip I want). Held. News search dates are unreliable; trust desk quotes.
+- Oct 8: verify the economic calendar before building plans around it (I misdated the jobs report). Bought VOO tranche 2.
 
 ## Scorecard
 (none yet)
