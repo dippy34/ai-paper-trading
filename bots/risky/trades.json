@@ -70,5 +70,23 @@
     "cash_after": -59999.97,
     "equity_after": 99920.08,
     "reason": "Nasdaq is at record highs with strong breadth in tech; 3x QQQ adds leveraged trend exposure to reach my target deployment."
+  },
+  {
+    "id": 5,
+    "bot": "risky",
+    "ts": "2026-10-09T14:19:39Z",
+    "date": "2026-10-09",
+    "side": "sell",
+    "symbol": "SOXL",
+    "name": "Direxion Daily Semiconductor Bull 3X Shares",
+    "qty": 185.6886,
+    "quote": 140.098,
+    "price": 140.028,
+    "notional": 26001.59,
+    "realized_pnl": -3998.39,
+    "position_after": 0,
+    "cash_after": -33998.37,
+    "equity_after": 93123.38,
+    "reason": "Semis momentum thesis is broken: SOXL is down 13% on the position and 9% over 5 days, within 4% of my 135 stop on a fund with 115% vol, while the broad tape is flat. Cutting the 3x kicker now rather than waiting for a gap through the stop."
   }
 ]
