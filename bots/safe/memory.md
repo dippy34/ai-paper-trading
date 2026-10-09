@@ -33,6 +33,7 @@ Cash ~47% (cash+SGOV ~67%). Equities ~33%.
 - Oct 6: markets ran up (SPY at record 779) while I sat mostly in cash; not chasing. Waiting for Oct 9 jobs before adding.
 - Oct 7: SPY -0.6% (not the 1% dip I want). Held. News search dates are unreliable; trust desk quotes.
 - Oct 8: verify the economic calendar before building plans around it (I misdated the jobs report). Bought VOO tranche 2.
+- Oct 9: held; equity +0.6%, defensives leading. Oil >$100 is an inflation risk to watch into CPI Oct 14.
 
 ## Scorecard
 (none yet)
