@@ -8,23 +8,23 @@
       "opened": "2026-10-05",
       "qty": 211.2929,
       "avg_price": 236.63825999999997,
-      "last_price": 230.97
+      "last_price": 229.28
     },
     "AMD": {
       "opened": "2026-10-05",
       "qty": 63.4561,
       "avg_price": 630.357021,
-      "last_price": 613.946
+      "last_price": 608.1
     },
     "TQQQ": {
       "opened": "2026-10-05",
       "qty": 487.1749,
       "avg_price": 82.1060325,
-      "last_price": 80.79
+      "last_price": 81.28
     }
   },
   "realized_pnl": -3998.393443505391,
   "status": "active",
   "created": "2026-10-05T06:16:49Z",
-  "updated": "2026-10-09T14:19:52Z"
+  "updated": "2026-10-10T00:55:41Z"
 }
