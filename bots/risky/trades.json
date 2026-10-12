@@ -88,5 +88,41 @@
     "cash_after": -33998.37,
     "equity_after": 93123.38,
     "reason": "Semis momentum thesis is broken: SOXL is down 13% on the position and 9% over 5 days, within 4% of my 135 stop on a fund with 115% vol, while the broad tape is flat. Cutting the 3x kicker now rather than waiting for a gap through the stop."
+  },
+  {
+    "id": 6,
+    "bot": "risky",
+    "ts": "2026-10-12T14:20:01Z",
+    "date": "2026-10-12",
+    "side": "sell",
+    "symbol": "AMD",
+    "name": "Advanced Micro Devices, Inc.",
+    "qty": 63.4561,
+    "quote": 593.954,
+    "price": 593.657,
+    "notional": 37671.16,
+    "realized_pnl": -2328.84,
+    "position_after": 0,
+    "cash_after": 3672.79,
+    "equity_after": 90247.07,
+    "reason": "AMD has lost 6% in 5 days, is breaking down with the semis group and is now 6% under my entry; the momentum thesis is gone, so I'm freeing the capital for a stronger setup."
+  },
+  {
+    "id": 7,
+    "bot": "risky",
+    "ts": "2026-10-12T14:20:03Z",
+    "date": "2026-10-12",
+    "side": "buy",
+    "symbol": "PLTR",
+    "name": "Palantir Technologies Inc.",
+    "qty": 193.0608,
+    "quote": 207.085,
+    "price": 207.1885,
+    "notional": 39999.99,
+    "realized_pnl": null,
+    "position_after": 193.0608,
+    "cash_after": -36327.2,
+    "equity_after": 90231.32,
+    "reason": "Palantir is up 10% in 5 days and 59% in 3 months with low vol (27%), pressing its 52-week high at ~213 while semis fade; relative-strength rotation into the AI software leader. Stop: close below 190, target 235."
   }
 ]

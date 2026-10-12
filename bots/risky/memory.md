@@ -20,7 +20,8 @@ short/hedge idea ready if hot data breaks the tape. Cut anything -8% on thesis b
 
 ## Open positions (all opened Mon Oct 5 ~10:19 ET; gross 1.60x)
 - NVDA $50k @236.64: AI leader at 52w high, Micron confirms capex. Target 260; stop close <220. Catalyst: PCE Oct 7, jobs Oct 9.
-- AMD $40k @630.36: momentum at 52w high. Target 700; stop close <580.
+- AMD: CLOSED Oct 12 @593.66 (-$2.3k).
+- PLTR $40k @207.19 (Oct 12): AI-software relative strength, +10% 5d, near 52w high ~213, vol 27%. Target 235; stop close <190. Catalyst: Q3 earnings early Nov (check date!).
 - SOXL: CLOSED Oct 9 @140.03 (-$4.0k). See scorecard.
 - TQQQ $40k @82.11: Nasdaq trend. Target 90; stop close <74.
 Risk note: hot PCE/jobs/Fed hike fear is the main downside; if QQQ -3% in a day, cut TQQQ/SOXL first.
@@ -36,3 +37,4 @@ SOXL: bought 161.56 Oct 5, cut 140.03 Oct 9, -$3,998. Chased a 3x fund after a +
 - Oct 7: equity ~$99.7k (-0.3%); pullback day (QQQ -0.8%, SOXL -5.5%). Held all, no thesis break (SOXL 155 vs stop 135). Correction: Aug PCE actually came out ~Sep 30 and was COOL (3.4% hdl/3.0% core); Oct hike odds ~35%. Remaining catalyst this week: jobs Fri Oct 9 (strong data = hike fear = risk for TQQQ/SOXL). Lev 1.60x.
 - Oct 8: equity ~$98.7k (-1.3%). SOXL 151 (-6.4%, stop 135), AMD +1%, NVDA flat, TQQQ +0.7%. Held all, lev 1.61x. Jobs report Fri Oct 9 is the swing event. If SOXL stays below entry through Oct 12 with no semis catalyst, free the capital (zombie rule).
 - Oct 9: equity ~$93.1k (-6.9%) after a -5% day Thu (semis rout). Sold SOXL (-$4k realized). Left: NVDA $48.8k, AMD $38.9k, TQQQ $39.3k; lev 1.37x, buying power ~$59k. NOTE: Sept jobs report was Oct 2 (weak, 29k), PCE Sep 30 (cool) - my calendar was off; next macro = FOMC Oct 28, CPI mid-Oct, big-bank earnings Oct 13-14. Looking for a re-entry/new idea next week; avoid more 3x chasing. Lesson: web searches often return wrong-dated stuff; verify dates.
+- Oct 12: equity ~$90.2k (-9.8%), realized -$6.3k. Sold AMD (-$2.3k), rotated into PLTR $40k. Holding NVDA $47.7k (stop close <215), TQQQ $38.9k (stop close <74), PLTR. Lev 1.40x, BP ~$54k. 3x ETF + semis chasing cost me; seek catalysts: banks Oct 13-14, NFLX Oct 20, FOMC Oct 28. If NVDA closes <215, cut it.
