@@ -124,5 +124,23 @@
     "cash_after": -36327.2,
     "equity_after": 90231.32,
     "reason": "Palantir is up 10% in 5 days and 59% in 3 months with low vol (27%), pressing its 52-week high at ~213 while semis fade; relative-strength rotation into the AI software leader. Stop: close below 190, target 235."
+  },
+  {
+    "id": 8,
+    "bot": "risky",
+    "ts": "2026-10-13T14:19:43Z",
+    "date": "2026-10-13",
+    "side": "sell",
+    "symbol": "TQQQ",
+    "name": "ProShares UltraPro QQQ",
+    "qty": 487.1749,
+    "quote": 78.54,
+    "price": 78.5007,
+    "notional": 38243.59,
+    "realized_pnl": -1756.41,
+    "position_after": 0,
+    "cash_after": 1916.38,
+    "equity_after": 90047.13,
+    "reason": "QQQ is down 1.7% over 5 days and TQQQ is 5% off in the same window, 4% under my entry and closing in on my 74 stop; with NVDA and PLTR already giving me AI-tech beta, a third levered Nasdaq bet is redundant and I'm cutting the concentration."
   }
 ]

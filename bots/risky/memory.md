@@ -23,7 +23,7 @@ short/hedge idea ready if hot data breaks the tape. Cut anything -8% on thesis b
 - AMD: CLOSED Oct 12 @593.66 (-$2.3k).
 - PLTR $40k @207.19 (Oct 12): AI-software relative strength, +10% 5d, near 52w high ~213, vol 27%. Target 235; stop close <190. Catalyst: Q3 earnings early Nov (check date!).
 - SOXL: CLOSED Oct 9 @140.03 (-$4.0k). See scorecard.
-- TQQQ $40k @82.11: Nasdaq trend. Target 90; stop close <74.
+- TQQQ: CLOSED Oct 13 @~78.6 (-$1.7k).
 Risk note: hot PCE/jobs/Fed hike fear is the main downside; if QQQ -3% in a day, cut TQQQ/SOXL first.
 
 ## Lessons
@@ -38,3 +38,4 @@ SOXL: bought 161.56 Oct 5, cut 140.03 Oct 9, -$3,998. Chased a 3x fund after a +
 - Oct 8: equity ~$98.7k (-1.3%). SOXL 151 (-6.4%, stop 135), AMD +1%, NVDA flat, TQQQ +0.7%. Held all, lev 1.61x. Jobs report Fri Oct 9 is the swing event. If SOXL stays below entry through Oct 12 with no semis catalyst, free the capital (zombie rule).
 - Oct 9: equity ~$93.1k (-6.9%) after a -5% day Thu (semis rout). Sold SOXL (-$4k realized). Left: NVDA $48.8k, AMD $38.9k, TQQQ $39.3k; lev 1.37x, buying power ~$59k. NOTE: Sept jobs report was Oct 2 (weak, 29k), PCE Sep 30 (cool) - my calendar was off; next macro = FOMC Oct 28, CPI mid-Oct, big-bank earnings Oct 13-14. Looking for a re-entry/new idea next week; avoid more 3x chasing. Lesson: web searches often return wrong-dated stuff; verify dates.
 - Oct 12: equity ~$90.2k (-9.8%), realized -$6.3k. Sold AMD (-$2.3k), rotated into PLTR $40k. Holding NVDA $47.7k (stop close <215), TQQQ $38.9k (stop close <74), PLTR. Lev 1.40x, BP ~$54k. 3x ETF + semis chasing cost me; seek catalysts: banks Oct 13-14, NFLX Oct 20, FOMC Oct 28. If NVDA closes <215, cut it.
+- Oct 13: equity ~$90.4k. Sold TQQQ (-$1.7k; redundant tech beta). Left: NVDA ~$47.7k (stop close <215), PLTR ~$40.4k (stop <190, tgt 235). Gross ~1.1x, BP large. Banks reported Oct 13: WFC -2.5%, C -1.7% on the day (my searches had no results). Ideas needing real research: non-tech theme (financial short on weakness? energy/oil on Middle East?), earnings catalysts. Don't deploy leverage without a thesis.
