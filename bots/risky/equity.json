@@ -368,5 +368,35 @@
         "value": 38881.43
       }
     }
+  },
+  {
+    "ts": "2026-10-13T02:35:59Z",
+    "date": "2026-10-12",
+    "label": "close",
+    "equity": 90626.31,
+    "cash": -36327.2,
+    "long_value": 126953.51,
+    "short_value": 0.0,
+    "gross": 126953.51,
+    "leverage": 1.401,
+    "return_pct": -9.374,
+    "benchmark": 778.1,
+    "positions": {
+      "NVDA": {
+        "qty": 211.2929,
+        "price": 226.32,
+        "value": 47819.81
+      },
+      "PLTR": {
+        "qty": 193.0608,
+        "price": 209.0,
+        "value": 40349.71
+      },
+      "TQQQ": {
+        "qty": 487.1749,
+        "price": 79.61,
+        "value": 38783.99
+      }
+    }
   }
 ]
