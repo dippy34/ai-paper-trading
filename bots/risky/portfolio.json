@@ -8,17 +8,17 @@
       "opened": "2026-10-05",
       "qty": 211.2929,
       "avg_price": 236.63825999999997,
-      "last_price": 225.57
+      "last_price": 228.52
     },
     "PLTR": {
       "opened": "2026-10-12",
       "qty": 193.0608,
       "avg_price": 207.18854249999998,
-      "last_price": 209.55
+      "last_price": 208.67
     }
   },
   "realized_pnl": -8083.645071500441,
   "status": "active",
   "created": "2026-10-05T06:16:49Z",
-  "updated": "2026-10-13T14:19:45Z"
+  "updated": "2026-10-14T00:19:53Z"
 }
