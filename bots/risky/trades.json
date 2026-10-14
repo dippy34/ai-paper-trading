@@ -142,5 +142,41 @@
     "cash_after": 1916.38,
     "equity_after": 90047.13,
     "reason": "QQQ is down 1.7% over 5 days and TQQQ is 5% off in the same window, 4% under my entry and closing in on my 74 stop; with NVDA and PLTR already giving me AI-tech beta, a third levered Nasdaq bet is redundant and I'm cutting the concentration."
+  },
+  {
+    "id": 9,
+    "bot": "risky",
+    "ts": "2026-10-14T14:19:16Z",
+    "date": "2026-10-14",
+    "side": "buy",
+    "symbol": "XLE",
+    "name": "State Street Energy Select Sector SPDR ETF",
+    "qty": 444.9804,
+    "quote": 67.385,
+    "price": 67.4187,
+    "notional": 30000.0,
+    "realized_pnl": null,
+    "position_after": 444.9804,
+    "cash_after": -28083.61,
+    "equity_after": 89276.26,
+    "reason": "Energy is the one group with clean relative strength (XLE +5.6% in 5d, +19% in 3m, at its 52-week high) amid Middle East supply risk, and it diversifies my book away from AI/tech beta. Stop: close below 63, target 74."
+  },
+  {
+    "id": 10,
+    "bot": "risky",
+    "ts": "2026-10-14T14:19:18Z",
+    "date": "2026-10-14",
+    "side": "short",
+    "symbol": "MS",
+    "name": "Morgan Stanley",
+    "qty": 82.8686,
+    "quote": 181.1,
+    "price": 181.0095,
+    "notional": 15000.0,
+    "realized_pnl": null,
+    "position_after": -82.8686,
+    "cash_after": -13083.61,
+    "equity_after": 89272.65,
+    "reason": "Banks are breaking down on earnings (BAC -8% today, MS -3% and -21% over 3 months) and MS sits below its 50-day; I'm taking a small short for follow-through, sized small because a relief bounce is likely. Cover on a close above 195 or at 160."
   }
 ]
