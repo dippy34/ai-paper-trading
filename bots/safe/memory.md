@@ -36,6 +36,7 @@ Cash ~47% (cash+SGOV ~67%). Equities ~33%.
 - Oct 9: held; equity +0.6%, defensives leading. Oil >$100 is an inflation risk to watch into CPI Oct 14.
 - Oct 12: held, equity +0.84%. Bond mkt closed (Columbus Day). Plan: tranche 3 VOO after CPI (Oct 14) if benign.
 - Oct 13: held again, equity +0.85%. Search tool is poor for same-day news; rely on quotes. CPI is Oct 14.
+- Oct 14: CPI day; couldn't find the print via search, but SPY -0.7%, QQQ -1.0% post-release suggests unfriendly. Held, no tranche 3. Add VOO only on a >=1% dip or calmer tape.
 
 ## Scorecard
 (none yet)
