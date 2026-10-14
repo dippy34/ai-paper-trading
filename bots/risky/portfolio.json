@@ -8,29 +8,29 @@
       "opened": "2026-10-05",
       "qty": 211.2929,
       "avg_price": 236.63825999999997,
-      "last_price": 224.423
+      "last_price": 221.3
     },
     "PLTR": {
       "opened": "2026-10-12",
       "qty": 193.0608,
       "avg_price": 207.18854249999998,
-      "last_price": 207.4
+      "last_price": 200.97
     },
     "XLE": {
       "opened": "2026-10-14",
       "qty": 444.9804,
       "avg_price": 67.4186925,
-      "last_price": 67.375
+      "last_price": 67.63
     },
     "MS": {
       "opened": "2026-10-14",
       "qty": -82.8686,
       "avg_price": 181.00945000000002,
-      "last_price": 181.07
+      "last_price": 181.51
     }
   },
   "realized_pnl": -8083.645071500441,
   "status": "active",
   "created": "2026-10-05T06:16:49Z",
-  "updated": "2026-10-14T14:19:29Z"
+  "updated": "2026-10-14T23:57:20Z"
 }
