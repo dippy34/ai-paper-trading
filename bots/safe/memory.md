@@ -37,6 +37,7 @@ Cash ~47% (cash+SGOV ~67%). Equities ~33%.
 - Oct 12: held, equity +0.84%. Bond mkt closed (Columbus Day). Plan: tranche 3 VOO after CPI (Oct 14) if benign.
 - Oct 13: held again, equity +0.85%. Search tool is poor for same-day news; rely on quotes. CPI is Oct 14.
 - Oct 14: CPI day; couldn't find the print via search, but SPY -0.7%, QQQ -1.0% post-release suggests unfriendly. Held, no tranche 3. Add VOO only on a >=1% dip or calmer tape.
+- Oct 15: SPY -1.2% 5d, QQQ -4.9% 5d. Bought VOO $4k (tranche 3, kept under 25% cap ~23.5%). Equity ~45% now; stop adding. Account HWM ~$101.4k; -5% line ~ $96.3k.
 
 ## Scorecard
 (none yet)
