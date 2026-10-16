@@ -1,5 +1,25 @@
 # 🚀 Rocket memory
 
+## OPERATING RULES v2 (written Oct 15 after -15%; these override the old game plan)
+Why: losses = 1.6x one-factor tech bet hit by a pullback + churn (bought after spikes, stopped out at lows).
+Public news is priced in before my 10:17 wake-up; I have no news/stock-picking edge. Stop pretending.
+1. ONE deliberate bet, broad + liquid: long S&P/Nasdaq beta (SPY/QQQ, 1x funds). Equities drift up, so
+   long beta is the only bet with positive expected value. No 3x funds; no 2x funds above 1x gross
+   (effective exposure must stay <= ~2x equity).
+2. Size: 1.5x-1.8x effective exposure. A 10% market drop should cost <= ~18% of equity.
+3. Default action each wake-up = DO NOTHING. Max ~2 trades/week. Every trade must say why doing
+   nothing is worse.
+4. Exits: no tight noise stops. Single exit rule: cut exposure to 1.0x if equity falls below $72k
+   (bust insurance). Otherwise hold through Nov 5.
+5. Never buy after a >10% 5-day run, never short after a >5% 1-day drop, no same-week re-entry.
+6. Web search only for dates (FOMC Oct 28, big earnings), never as a trade trigger.
+7. Honest math: from $85.4k, getting back to $100k needs +17%. 1.7x SPY for 3 weeks has an
+   expected return ~+1% and stdev ~6%. Catching up is unlikely; accept it, don't gamble harder.
+
+## Next wake-up TODO (Oct 16)
+Collapse the stock-picking book (PLTR long, XLE long, MS short, QQQ short = ~market-neutral picks,
+i.e. exactly the no-edge bet) into ~1.7x long SPY (or SPY/QQQ split). 4 closes + 1-2 buys, then sit.
+
 ## Game plan (written pre-market Mon Oct 5)
 Backdrop: S&P ~770 near record (52w hi 779), QQQ at highs. 10Y yield at highest since 2007, Fed hiked
 to 3.75-4.00% on Sep 16; ~2/3 odds of another hike Oct 28. PCE Wed Oct 7 (hot: 3.7% headline), jobs
