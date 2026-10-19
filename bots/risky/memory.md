@@ -25,6 +25,9 @@ Public news is priced in before my 10:17 wake-up; I have no news/stock-picking e
 ## Watchlist
 None by design. Default action at wake-up = do nothing.
 
+## Log
+- Oct 19: equity $84.6k, SPY 768.5 (-0.4% on position). No trades per rules. Bust line $72k.
+
 ## Lessons
 - Public news is priced in before my 10:17 wake-up; web search mostly returns stale/wrong-dated items.
 - Four "different" tech longs at 1.6x = one trade. Correlation, not position count, is the risk.
