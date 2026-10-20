@@ -38,3 +38,4 @@ None by design. Default action at wake-up = do nothing.
 ## Scorecard (closed trades, realized)
 SOXL -4.0k | AMD -2.3k | TQQQ -1.8k | NVDA -4.4k | PLTR -2.0k | XLE -0.1k | MS short -0.2k |
 QQQ short -0.1k. Total realized -$14.9k. Verdict: no-edge stock picking with leverage; stopped Oct 16.
+- Oct 20: equity $84.8k, SPY 769.8. No trades per rules.
