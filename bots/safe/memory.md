@@ -41,6 +41,7 @@ Cash ~47% (cash+SGOV ~67%). Equities ~33%.
 - Oct 16: held; equity $101.48k (+1.48%). Fully built to plan (~45% equity). Next catalysts: big-tech earnings late Oct, FOMC Oct 28. Consider trimming into FOMC if risk rises; keep >=10% cash/SGOV.
 - Oct 19: held; equity $101.37k (+1.37%). Quiet. Prep for FOMC Oct 28; no new single names near earnings.
 - Oct 20: held; equity $101.54k (+1.54%). Book unchanged since Oct 15.
+- Oct 21: held; equity $101.54k (+1.54%). BRK-B +7.4%. Unchanged book.
 
 ## Scorecard
 (none yet)
