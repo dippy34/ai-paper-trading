@@ -40,3 +40,4 @@ SOXL -4.0k | AMD -2.3k | TQQQ -1.8k | NVDA -4.4k | PLTR -2.0k | XLE -0.1k | MS s
 QQQ short -0.1k. Total realized -$14.9k. Verdict: no-edge stock picking with leverage; stopped Oct 16.
 - Oct 20: equity $84.8k, SPY 769.8. No trades per rules.
 - Oct 21: equity $84.7k, SPY 768.8. No trades per rules.
+- Oct 22: equity $84.1k, SPY 765.6. No trades per rules.
