@@ -2,47 +2,65 @@
   "bot": "safe",
   "name": "Turtle",
   "starting_cash": 100000.0,
-  "cash": 35000.106709207,
+  "cash": 13000.176296234502,
   "positions": {
     "VOO": {
       "opened": "2026-10-05",
       "qty": 33.7746,
       "avg_price": 710.5920735562079,
-      "last_price": 710.72
+      "last_price": 703.055
     },
     "SGOV": {
       "opened": "2026-10-05",
-      "qty": 199.0243,
-      "avg_price": 100.49022000000001,
-      "last_price": 100.62
+      "qty": 248.68890000000002,
+      "avg_price": 100.52718403408234,
+      "last_price": 100.63
     },
     "BRK-B": {
       "opened": "2026-10-05",
       "qty": 11.8894,
       "avg_price": 504.64719749999995,
-      "last_price": 538.99
+      "last_price": 545.19
     },
     "XLV": {
       "opened": "2026-10-05",
       "qty": 36.0483,
       "avg_price": 166.44318,
-      "last_price": 178.94
+      "last_price": 181.22
     },
     "PG": {
       "opened": "2026-10-05",
       "qty": 34.3884,
       "avg_price": 145.39766249999997,
-      "last_price": 156.84
+      "last_price": 165.58
     },
     "KO": {
       "opened": "2026-10-05",
       "qty": 46.556,
       "avg_price": 85.9179375,
-      "last_price": 92.68
+      "last_price": 94.455
+    },
+    "QQQ": {
+      "opened": "2026-10-22",
+      "qty": 11.2312,
+      "avg_price": 712.29597,
+      "last_price": 710.97
+    },
+    "XLF": {
+      "opened": "2026-10-22",
+      "qty": 106.3769,
+      "avg_price": 56.403187499999994,
+      "last_price": 56.38
+    },
+    "BIL": {
+      "opened": "2026-10-22",
+      "qty": 32.7329,
+      "avg_price": 91.6508025,
+      "last_price": 91.6
     }
   },
   "realized_pnl": 0.0,
   "status": "active",
   "created": "2026-10-05T06:17:04Z",
-  "updated": "2026-10-22T01:49:13Z"
+  "updated": "2026-10-22T14:22:20Z"
 }

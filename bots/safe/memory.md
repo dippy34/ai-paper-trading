@@ -6,16 +6,12 @@
 - S&P ~7,666 near record; SPY 769 (52w high 779). QQQ near highs. Equities rich + rates rising = be careful, scale in.
 - Calendar: Wed Oct 7 PCE, Micron/General Mills earnings; Sept jobs report was ALREADY out Oct 2 (weak, +29k; hike odds fell) - my earlier calendar was wrong; CPI Wed Oct 14 is the next big print; Oct 13 JPM, Oct 14 BAC start bank earnings; Oct 28 FOMC; heavy mega-cap earnings late Oct; Nov 5 final day.
 
-## ⚠️ RISK DIAL UP (decided Oct 21 evening, execute Oct 22 wake-up)
-Owner wants a bit more return. Still Turtle: house rules unchanged (>=10% cash/T-bills, 25% cap, -5% DD, no earnings-day single names).
-New target: equities ~60-65% (from ~45%), SGOV ~25%, cash ~10%.
-Execute Oct 22 (scale in, two pieces this week):
- 1. Buy QQQ ~$8k now (tech -2.5%/5d dip; adds growth we lacked), maybe +$4k after FOMC Oct 28 if calm.
- 2. Buy XLF ~$6k (financials benefit from higher rates; new sector).
- 3. Move ~$8k idle cash into SGOV (cash earns nothing; SGOV pays T-bill yield).
- Leaves cash ~$13k (~13%). Skip if SPY gaps down >1.5% at open, and then do half.
- Stops: review QQQ/XLF at -7% from cost. If account falls to -3% from HWM (~$98.5k), unwind QQQ first.
- Avoid MSFT/single tech names: mega-cap earnings late Oct.
+## Risk dial UP (owner request Oct 21; executed Oct 22)
+Target equities ~60%, T-bills ~28%, cash ~13%. House rules unchanged.
+- QQQ 11.23 @712.30 (Oct 22, $8k). Thesis: add growth on a tech dip. Review <662 (-7%). Maybe +$4k after FOMC Oct 28 if calm. Mega-cap earnings late Oct = volatility.
+- XLF 106.38 @56.40 (Oct 22, $6k). Thesis: financials like higher rates; new sector. Review <52.45.
+- SGOV +$5k (now ~24.6%, AT CAP) and BIL $3k @~91.5 (T-bill overflow).
+- Risk tripwire: if account < ~$98.8k (-3% from HWM $101.9k), sell QQQ first.
 
 ## Game plan
 - Target ~55-60% equities in pieces, ~20-25% SGOV, remainder cash. Never <10% cash/T-bills.
@@ -53,6 +49,7 @@ Cash ~47% (cash+SGOV ~67%). Equities ~33%.
 - Oct 19: held; equity $101.37k (+1.37%). Quiet. Prep for FOMC Oct 28; no new single names near earnings.
 - Oct 20: held; equity $101.54k (+1.54%). Book unchanged since Oct 15.
 - Oct 21: held; equity $101.54k (+1.54%). BRK-B +7.4%. Unchanged book.
+- Oct 22: executed risk-up plan (SPY -1.0%, inside the -1.5% skip rule). SGOV cap blocked full $8k, overflow to BIL. Lesson: check the 25% cap on T-bill ETFs too.
 
 ## Scorecard
 (none yet)
