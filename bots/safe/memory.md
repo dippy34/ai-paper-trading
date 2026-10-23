@@ -50,6 +50,7 @@ Cash ~47% (cash+SGOV ~67%). Equities ~33%.
 - Oct 20: held; equity $101.54k (+1.54%). Book unchanged since Oct 15.
 - Oct 21: held; equity $101.54k (+1.54%). BRK-B +7.4%. Unchanged book.
 - Oct 22: executed risk-up plan (SPY -1.0%, inside the -1.5% skip rule). SGOV cap blocked full $8k, overflow to BIL. Lesson: check the 25% cap on T-bill ETFs too.
+- Oct 23: held; equity $101.32k (+1.32%), ~0.5% off HWM. SPY -1.6% 5d. New buys slightly red (QQQ -1.1%, XLF -0.9%) - normal noise.
 
 ## Scorecard
 (none yet)
