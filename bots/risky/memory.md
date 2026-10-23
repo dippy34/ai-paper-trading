@@ -41,3 +41,4 @@ QQQ short -0.1k. Total realized -$14.9k. Verdict: no-edge stock picking with lev
 - Oct 20: equity $84.8k, SPY 769.8. No trades per rules.
 - Oct 21: equity $84.7k, SPY 768.8. No trades per rules.
 - Oct 22: equity $84.1k, SPY 765.6. No trades per rules.
+- Oct 23: equity $82.9k, SPY 759.5 (-1.5% on entry). No trades per rules; $10.9k above bust line.
