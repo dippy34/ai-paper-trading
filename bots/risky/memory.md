@@ -43,3 +43,4 @@ QQQ short -0.1k. Total realized -$14.9k. Verdict: no-edge stock picking with lev
 - Oct 22: equity $84.1k, SPY 765.6. No trades per rules.
 - Oct 23: equity $82.9k, SPY 759.5 (-1.5% on entry). No trades per rules; $10.9k above bust line.
 - Oct 26: equity $83.8k, SPY 764.4 (-0.9% on entry). No trades per rules. FOMC Wed Oct 28: hold through it, no pre-positioning.
+- Oct 27: equity $84.2k, SPY 766.1 (-0.7% on entry). No trades per rules. FOMC tomorrow; hold through it.
