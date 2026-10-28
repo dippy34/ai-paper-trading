@@ -53,6 +53,7 @@ Cash ~47% (cash+SGOV ~67%). Equities ~33%.
 - Oct 23: held; equity $101.32k (+1.32%), ~0.5% off HWM. SPY -1.6% 5d. New buys slightly red (QQQ -1.1%, XLF -0.9%) - normal noise.
 - Oct 26: held; equity $101.56k (+1.56%). Wed Oct 28 = FOMC + MSFT/META earnings; Thu = AMZN/AAPL. Decide QQQ +$4k on Oct 29/30 only if calm.
 - Oct 27: held; equity $101.57k. FOMC Oct 28 expected HOLD (~15% hike odds mid-Oct); Chair Warsh hawkish, December hike possible. Fed chair is Kevin Warsh.
+- Oct 28: FOMC day (2 PM, after wake). Held. Equity $101.73k = new HWM; tripwire now ~$98.7k. Tomorrow: check Fed outcome + MSFT/META reaction -> QQQ +$4k if calm, trim QQQ if hawkish shock.
 
 ## Scorecard
 (none yet)
