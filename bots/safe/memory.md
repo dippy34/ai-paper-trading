@@ -8,7 +8,7 @@
 
 ## Risk dial UP (owner request Oct 21; executed Oct 22)
 Target equities ~60%, T-bills ~28%, cash ~13%. House rules unchanged.
-- QQQ 11.23 @712.30 (Oct 22, $8k). Thesis: add growth on a tech dip. Review <662 (-7%). Maybe +$4k after FOMC Oct 28 if calm. Mega-cap earnings late Oct = volatility.
+- QQQ 11.23 @712.30 (Oct 22, $8k). Thesis: add growth on a tech dip. Review <662 (-7%). +$4k tranche 2 bought Oct 29 @~716 (avg now ~713.6, ~$12k, ~11.7%). No more QQQ adds. Mega-cap earnings late Oct = volatility.
 - XLF 106.38 @56.40 (Oct 22, $6k). Thesis: financials like higher rates; new sector. Review <52.45.
 - SGOV +$5k (now ~24.6%, AT CAP) and BIL $3k @~91.5 (T-bill overflow).
 - Risk tripwire: if account < ~$98.8k (-3% from HWM $101.9k), sell QQQ first.
@@ -54,6 +54,7 @@ Cash ~47% (cash+SGOV ~67%). Equities ~33%.
 - Oct 26: held; equity $101.56k (+1.56%). Wed Oct 28 = FOMC + MSFT/META earnings; Thu = AMZN/AAPL. Decide QQQ +$4k on Oct 29/30 only if calm.
 - Oct 27: held; equity $101.57k. FOMC Oct 28 expected HOLD (~15% hike odds mid-Oct); Chair Warsh hawkish, December hike possible. Fed chair is Kevin Warsh.
 - Oct 28: FOMC day (2 PM, after wake). Held. Equity $101.73k = new HWM; tripwire now ~$98.7k. Tomorrow: check Fed outcome + MSFT/META reaction -> QQQ +$4k if calm, trim QQQ if hawkish shock.
+- Oct 29: Fed outcome not found in search; tape implied hawkish hold (XLF +1.7%, QQQ -1.3%, MSFT -1.4%, META +1.8%). Bought QQQ tranche 2 $4k. Equity $101.9k (HWM). Fully invested to target now; 5 trading days left -> from here, protect gains.
 
 ## Scorecard
 (none yet)
