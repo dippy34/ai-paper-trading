@@ -948,5 +948,25 @@
         "value": 144163.17
       }
     }
+  },
+  {
+    "ts": "2026-10-29T14:18:46Z",
+    "date": "2026-10-29",
+    "label": "morning",
+    "equity": 84775.64,
+    "cash": -58855.54,
+    "long_value": 143631.17,
+    "short_value": 0.0,
+    "gross": 143631.17,
+    "leverage": 1.694,
+    "return_pct": -15.224,
+    "benchmark": 769.46,
+    "positions": {
+      "SPY": {
+        "qty": 186.6649,
+        "price": 769.46,
+        "value": 143631.17
+      }
+    }
   }
 ]
