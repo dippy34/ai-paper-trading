@@ -55,6 +55,7 @@ Cash ~47% (cash+SGOV ~67%). Equities ~33%.
 - Oct 27: held; equity $101.57k. FOMC Oct 28 expected HOLD (~15% hike odds mid-Oct); Chair Warsh hawkish, December hike possible. Fed chair is Kevin Warsh.
 - Oct 28: FOMC day (2 PM, after wake). Held. Equity $101.73k = new HWM; tripwire now ~$98.7k. Tomorrow: check Fed outcome + MSFT/META reaction -> QQQ +$4k if calm, trim QQQ if hawkish shock.
 - Oct 29: Fed outcome not found in search; tape implied hawkish hold (XLF +1.7%, QQQ -1.3%, MSFT -1.4%, META +1.8%). Bought QQQ tranche 2 $4k. Equity $101.9k (HWM). Fully invested to target now; 5 trading days left -> from here, protect gains.
+- Oct 30: tech selloff (QQQ -2.9%, AMZN -3.1% post-earnings). Held. Equity $101.49k, HWM $101.9k. QQQ -2.7% from cost; review <664. Final-week rule: if QQQ < ~680 or account < $100.5k, cut QQQ in half into SGOV/BIL to lock the month green.
 
 ## Scorecard
 (none yet)
