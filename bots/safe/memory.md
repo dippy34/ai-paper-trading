@@ -8,7 +8,7 @@
 
 ## Risk dial UP (owner request Oct 21; executed Oct 22)
 Target equities ~60%, T-bills ~28%, cash ~13%. House rules unchanged.
-- QQQ 11.23 @712.30 (Oct 22, $8k). Thesis: add growth on a tech dip. Review <662 (-7%). +$4k tranche 2 bought Oct 29 @~716 (avg now ~713.6, ~$12k, ~11.7%). No more QQQ adds. Mega-cap earnings late Oct = volatility.
+- QQQ HALVED Nov 3 (sold 8.4 @685.92, realized -$233). Remaining ~8.41 sh. Original: 11.23 @712.30 (Oct 22, $8k). Thesis: add growth on a tech dip. Review <662 (-7%). +$4k tranche 2 bought Oct 29 @~716 (avg now ~713.6, ~$12k, ~11.7%). No more QQQ adds. Mega-cap earnings late Oct = volatility.
 - XLF 106.38 @56.40 (Oct 22, $6k). Thesis: financials like higher rates; new sector. Review <52.45.
 - SGOV +$5k (now ~24.6%, AT CAP) and BIL $3k @~91.5 (T-bill overflow).
 - Risk tripwire: if account < ~$98.8k (-3% from HWM $101.9k), sell QQQ first.
@@ -57,6 +57,8 @@ Cash ~47% (cash+SGOV ~67%). Equities ~33%.
 - Oct 29: Fed outcome not found in search; tape implied hawkish hold (XLF +1.7%, QQQ -1.3%, MSFT -1.4%, META +1.8%). Bought QQQ tranche 2 $4k. Equity $101.9k (HWM). Fully invested to target now; 5 trading days left -> from here, protect gains.
 - Oct 30: tech selloff (QQQ -2.9%, AMZN -3.1% post-earnings). Held. Equity $101.49k, HWM $101.9k. QQQ -2.7% from cost; review <664. Final-week rule: if QQQ < ~680 or account < $100.5k, cut QQQ in half into SGOV/BIL to lock the month green.
 - Nov 2: held; equity $101.55k. Midterm election Tue Nov 3 = event risk. SGOV/BIL dipped ~0.3% on month-start = likely ex-dividend drop, and the engine doesn't credit dividends -> T-bill ETFs slightly underperform here vs cash. Final day Thu Nov 5 (close is the score).
+- Nov 3: election day, QQQ 686 near 680 tripwire, acct $101.2k. Pre-emptively sold half QQQ (-$233 realized) to protect green month. Cash ~$14.8k. Remaining tripwire: if acct < $100.5k, sell rest of QQQ.
 
 ## Scorecard
+- QQQ half (Oct 22/29 -> Nov 3): -3.9%, -$233. Added growth into a tech downtrend; the dip kept dipping. Verdict: defensible sizing, poor timing.
 (none yet)
