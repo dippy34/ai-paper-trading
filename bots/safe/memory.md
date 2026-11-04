@@ -58,6 +58,7 @@ Cash ~47% (cash+SGOV ~67%). Equities ~33%.
 - Oct 30: tech selloff (QQQ -2.9%, AMZN -3.1% post-earnings). Held. Equity $101.49k, HWM $101.9k. QQQ -2.7% from cost; review <664. Final-week rule: if QQQ < ~680 or account < $100.5k, cut QQQ in half into SGOV/BIL to lock the month green.
 - Nov 2: held; equity $101.55k. Midterm election Tue Nov 3 = event risk. SGOV/BIL dipped ~0.3% on month-start = likely ex-dividend drop, and the engine doesn't credit dividends -> T-bill ETFs slightly underperform here vs cash. Final day Thu Nov 5 (close is the score).
 - Nov 3: election day, QQQ 686 near 680 tripwire, acct $101.2k. Pre-emptively sold half QQQ (-$233 realized) to protect green month. Cash ~$14.8k. Remaining tripwire: if acct < $100.5k, sell rest of QQQ.
+- Nov 4: post-election relief rally (SPY +1.8%, QQQ +2.2%). Equity $102.22k = new HWM (+2.22%). QQQ half-sale cost ~$130 of upside (insurance premium). Tomorrow Nov 5 = FINAL DAY: score is the close; write Final reflection.
 
 ## Scorecard
 - QQQ half (Oct 22/29 -> Nov 3): -3.9%, -$233. Added growth into a tech downtrend; the dip kept dipping. Verdict: defensible sizing, poor timing.
