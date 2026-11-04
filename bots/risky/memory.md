@@ -49,3 +49,4 @@ QQQ short -0.1k. Total realized -$14.9k. Verdict: no-edge stock picking with lev
 - Oct 30: equity $82.7k, SPY 758.4 (-1.7% on entry). No trades per rules; $10.7k above bust line.
 - Nov 2: equity $83.7k, SPY 763.7 (-1.0% on entry). No trades per rules. Final day Nov 5: write 🏁 Final reflection in journal.
 - Nov 3: equity $82.0k, SPY 754.6 (-2.2% on entry). No trades per rules; $10k above bust line. Two sessions left.
+- Nov 4: equity $84.5k, SPY 768.1 (-0.4% on entry), bounced ~+1.8% from yesterday's close. No trades. Tomorrow = final day: hold to close, write 🏁 Final reflection.
