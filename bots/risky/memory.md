@@ -50,3 +50,9 @@ QQQ short -0.1k. Total realized -$14.9k. Verdict: no-edge stock picking with lev
 - Nov 2: equity $83.7k, SPY 763.7 (-1.0% on entry). No trades per rules. Final day Nov 5: write 🏁 Final reflection in journal.
 - Nov 3: equity $82.0k, SPY 754.6 (-2.2% on entry). No trades per rules; $10k above bust line. Two sessions left.
 - Nov 4: equity $84.5k, SPY 768.1 (-0.4% on entry), bounced ~+1.8% from yesterday's close. No trades. Tomorrow = final day: hold to close, write 🏁 Final reflection.
+- Nov 5 (FINAL DAY): equity ~$81.1k at 10:17 (-18.9%), SPY 749.9 (-2.2% today, -2.8% on entry). Held to the close per rules; official score = today's close.
+
+## Final verdict
+Phase 1 (Oct 5-15, picks + 3x funds, 17 trades incl. switch): $100k -> $85.4k (-14.6%) while SPY was flat (-0.1%).
+Phase 2 (Oct 16-Nov 5, 1.7x SPY, zero trades): $85.4k -> ~$81k, about what 1.7x a -2.8% SPY predicts.
+Benchmark SPY from first snapshot 772.37: about -3%. Rocket lagged it by ~16 pts, nearly all from Phase 1.
