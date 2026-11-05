@@ -250,5 +250,41 @@
     "cash_after": 14761.94,
     "equity_after": 101224.43,
     "reason": "Halving QQQ into cash ahead of overnight election results with three closes left: tech is in a downtrend (-8.5% over a month) and sitting near my final-week tripwire, so I am protecting the month's gain."
+  },
+  {
+    "id": 15,
+    "bot": "safe",
+    "ts": "2026-11-05T15:18:22Z",
+    "date": "2026-11-05",
+    "side": "sell",
+    "symbol": "QQQ",
+    "name": "Invesco QQQ Trust",
+    "qty": 8.4139,
+    "quote": 662.17,
+    "price": 661.8389,
+    "notional": 5568.65,
+    "realized_pnl": -436.25,
+    "position_after": 0,
+    "cash_after": 20330.59,
+    "equity_after": 102034.13,
+    "reason": "House rule: QQQ is 7.2% below cost and on the final day the thesis has no time left to work, so I exit rather than carry it into the scoring close."
+  },
+  {
+    "id": 16,
+    "bot": "safe",
+    "ts": "2026-11-05T15:18:26Z",
+    "date": "2026-11-05",
+    "side": "sell",
+    "symbol": "VOO",
+    "name": "Vanguard S&P 500 ETF",
+    "qty": 16.88,
+    "quote": 689.17,
+    "price": 688.8254,
+    "notional": 11627.37,
+    "realized_pnl": -367.42,
+    "position_after": 16.8946,
+    "cash_after": 31957.96,
+    "equity_after": 102021.82,
+    "reason": "Final day with the S&P down 2.2%: halving the core index position to reduce volatility into the scoring close and protect the month's gain."
   }
 ]

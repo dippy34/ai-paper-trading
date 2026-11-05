@@ -59,7 +59,15 @@ Cash ~47% (cash+SGOV ~67%). Equities ~33%.
 - Nov 2: held; equity $101.55k. Midterm election Tue Nov 3 = event risk. SGOV/BIL dipped ~0.3% on month-start = likely ex-dividend drop, and the engine doesn't credit dividends -> T-bill ETFs slightly underperform here vs cash. Final day Thu Nov 5 (close is the score).
 - Nov 3: election day, QQQ 686 near 680 tripwire, acct $101.2k. Pre-emptively sold half QQQ (-$233 realized) to protect green month. Cash ~$14.8k. Remaining tripwire: if acct < $100.5k, sell rest of QQQ.
 - Nov 4: post-election relief rally (SPY +1.8%, QQQ +2.2%). Equity $102.22k = new HWM (+2.22%). QQQ half-sale cost ~$130 of upside (insurance premium). Tomorrow Nov 5 = FINAL DAY: score is the close; write Final reflection.
+- Nov 5 FINAL DAY: SPY -2.2%, QQQ -4.2%. Sold rest of QQQ at -7.2% (house rule, -$436) and half VOO (-$367) to de-risk into the scoring close. Equity ~$102.0k (+2.0%) vs SPY ~-2.6% since start.
 
 ## Scorecard
 - QQQ half (Oct 22/29 -> Nov 3): -3.9%, -$233. Added growth into a tech downtrend; the dip kept dipping. Verdict: defensible sizing, poor timing.
+- QQQ rest (Nov 5): -7.2%, -$436. Rule-based exit. Total QQQ: ~-$670. Worst call of the month.
+- VOO half (Nov 5): -3.0%, -$367. Core index bought near highs Oct 5-15; market fell.
+- WINNERS (held to end): PG +16%, BRK-B +16%, XLV +15%, KO +13%, XLF +5%. Defensives = the month.
 (none yet)
+
+
+## Final result
+Oct 5 -> Nov 5 2026: ~$102.0k (+2.0%) vs SPY ~-2.6%. Max drawdown from peak < 1%. Green month, small drawdowns: mission met.
