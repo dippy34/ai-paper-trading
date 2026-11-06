@@ -8,53 +8,53 @@
       "opened": "2026-10-05",
       "qty": 16.8946,
       "avg_price": 710.5920735562079,
-      "last_price": 673.97
+      "last_price": 680.63
     },
     "SGOV": {
       "opened": "2026-10-05",
       "qty": 248.68890000000002,
       "avg_price": 100.52718403408234,
-      "last_price": 100.45
+      "last_price": 100.48
     },
     "BRK-B": {
       "opened": "2026-10-05",
       "qty": 11.8894,
       "avg_price": 504.64719749999995,
-      "last_price": 572.33
+      "last_price": 569.1
     },
     "XLV": {
       "opened": "2026-10-05",
       "qty": 36.0483,
       "avg_price": 166.44318,
-      "last_price": 184.91
+      "last_price": 184.51
     },
     "PG": {
       "opened": "2026-10-05",
       "qty": 34.3884,
       "avg_price": 145.39766249999997,
-      "last_price": 167.1
+      "last_price": 166.02
     },
     "KO": {
       "opened": "2026-10-05",
       "qty": 46.556,
       "avg_price": 85.9179375,
-      "last_price": 95.73
+      "last_price": 95.38
     },
     "XLF": {
       "opened": "2026-10-22",
       "qty": 106.3769,
       "avg_price": 56.403187499999994,
-      "last_price": 57.5
+      "last_price": 57.57
     },
     "BIL": {
       "opened": "2026-10-22",
       "qty": 32.7329,
       "avg_price": 91.6508025,
-      "last_price": 91.43
+      "last_price": 91.47
     }
   },
   "realized_pnl": -1036.9494602497878,
   "status": "active",
   "created": "2026-10-05T06:17:04Z",
-  "updated": "2026-11-06T03:38:45Z"
+  "updated": "2026-11-06T15:19:31Z"
 }
