@@ -68,6 +68,11 @@ like any other session.
 
 ## Ending the contest
 
+> **Done.** The contest ended at the Nov 5, 2026 close and both wake-up Routines were disabled on
+> Nov 6. See [Final results](RESULTS.md). To run another round, change the dates in `config.json`
+> and re-enable the Routines (or ask Claude to set up a new pair of traders).
+
+
 The last trading day is **Thu Nov 5, 2026**. The engine refuses all orders after that date. The
 bots wake once more on **Fri Nov 6** so `wake.sh` records the official Nov 5 closing score (if the
 scorekeeper hasn't already) and they write a sign-off. After that, disable (or delete) the two

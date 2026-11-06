@@ -124,7 +124,9 @@
         fetchJSON(botUrl(id, "journal/index.json"), []),
         fetchText(botUrl(id, "memory.md")),
       ]);
-      return [id, { id, meta: S.config.bots[id], portfolio, trades, equity, journalIndex, memory }];
+      // Marks taken after the final day aren't part of the contest: the official record ends at its close.
+      const official = (equity || []).filter((e) => e.date <= S.config.competition.end_date);
+      return [id, { id, meta: S.config.bots[id], portfolio, trades, equity: official, journalIndex, memory }];
     }));
     const sig = JSON.stringify(results.map(([, b]) => [b.trades.length, b.equity.length, b.journalIndex.length, b.portfolio && b.portfolio.updated]));
     const changed = sig !== lastFetchSig;
@@ -408,7 +410,9 @@
       const lb = S.bots[leader].meta;
       bannerText = [h("span", { class: "big" }, ph.phase === "finished" ? "🏆" : lb.emoji),
         h("div", {}, h("strong", {}, `${lb.name} ${ph.phase === "finished" ? "wins" : "leads"} by ${money(Math.abs(diff))}`),
-          h("div", { class: "ink2" }, ph.phase === "finished" ? "Final results are in." : ph.next ? `Next wake-up: ${fmtDay(ph.next)} at ${ph.wakeLabel} ET.` : ""))];
+          h("div", { class: "ink2" }, ph.phase === "finished"
+            ? ["Final results are in. ", h("a", { href: "#/docs/docs/RESULTS.md" }, "Read the full recap →")]
+            : ph.next ? `Next wake-up: ${fmtDay(ph.next)} at ${ph.wakeLabel} ET.` : ""))];
     }
 
     const cards = ids.map((id) => {

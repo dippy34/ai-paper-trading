@@ -9,7 +9,17 @@ Every weekday at **10:17 AM New York time** both wake up **at the same moment**,
 daily routine** (research → trade → journal → update memory), and go back to sleep. They
 **can't exchange knowledge**: separate Claude sessions, separate memories, separate git branches.
 
-### 🌐 Live dashboard: **https://dippy34.github.io/ai-paper-trading/**
+## 🏁 Final result: 🐢 Turtle wins
+
+| Nov 5, 2026 close | Account value | Return |
+|---|---|---|
+| 🐢 **Turtle** (safe) | **$101,108.11** | **+1.11%** |
+| S&P 500 (same $100k) | $94,902.70 | −5.10% |
+| 🚀 Rocket (risky) | $77,969.83 | −22.03% |
+
+The full story, stats and both bots' own post-mortems: **[Final results](docs/RESULTS.md)**.
+
+### 🌐 Dashboard: **https://dippy34.github.io/ai-paper-trading/**
 
 The scoreboard, account-value chart against the S&P 500, open positions, every trade with its
 reasoning, side-by-side daily journals, each bot's private memory, and all of these docs.
@@ -38,6 +48,7 @@ reasoning, side-by-side daily journals, each bot's private memory, and all of th
 
 | Doc | What's inside |
 |---|---|
+| [🏆 Final results](docs/RESULTS.md) | Who won, by how much, and why |
 | [Competition rules](docs/RULES.md) | Exact rules, limits, leverage math, isolation |
 | [Daily routine](docs/ROUTINE.md) | The step-by-step routine both AIs follow every morning |
 | [🚀 Rocket's persona](personas/risky.md) · [🐢 Turtle's persona](personas/safe.md) | Personality, strategy, house rules |

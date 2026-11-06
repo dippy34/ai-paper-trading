@@ -417,6 +417,8 @@ class Desk:
     def snapshot(self, label: str, only_trading_day: bool = False) -> dict | None:
         now = self.now_fn()
         today = self.today()
+        if self.competition_phase(today) == "finished":
+            return None  # after the final close nothing more is scored
         if only_trading_day:
             if self.competition_phase(today) != "live":
                 return None

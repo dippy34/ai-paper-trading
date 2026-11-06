@@ -188,6 +188,10 @@ class DeskTest(unittest.TestCase):
         self.mkt.open = False
         self.assertEqual(d.snapshot("close", only_trading_day=True)["label"], "close")
 
+    def test_no_snapshots_after_the_contest(self):
+        self.now = datetime(2026, 11, 6, 15, 20, tzinfo=timezone.utc)
+        self.assertIsNone(self.desk("risky").snapshot("morning"))
+
     def test_journal_appends_and_indexes(self):
         d = self.desk("safe")
         d.write_journal("## Market read\nCalm.")

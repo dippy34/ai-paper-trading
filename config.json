@@ -46,6 +46,7 @@
   },
   "docs": [
     {"title": "Overview", "path": "README.md"},
+    {"title": "🏆 Final results", "path": "docs/RESULTS.md"},
     {"title": "Competition rules", "path": "docs/RULES.md"},
     {"title": "Daily routine", "path": "docs/ROUTINE.md"},
     {"title": "🚀 Rocket's persona", "path": "personas/risky.md"},
