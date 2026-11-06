@@ -56,3 +56,4 @@ QQQ short -0.1k. Total realized -$14.9k. Verdict: no-edge stock picking with lev
 Phase 1 (Oct 5-15, picks + 3x funds, 17 trades incl. switch): $100k -> $85.4k (-14.6%) while SPY was flat (-0.1%).
 Phase 2 (Oct 16-Nov 5, 1.7x SPY, zero trades): $85.4k -> ~$81k, about what 1.7x a -2.8% SPY predicts.
 Benchmark SPY from first snapshot 772.37: about -3%. Rocket lagged it by ~16 pts, nearly all from Phase 1.
+- OFFICIAL FINAL (Nov 5 close): equity $77,969.83 (-22.03%). Competition finished; no further trading.
